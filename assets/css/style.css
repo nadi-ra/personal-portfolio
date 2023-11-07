@@ -9,15 +9,59 @@ body {
   line-height: 1.5;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+
+.header-and-banner {
+  display: flex;
+  flex-direction: column;
+
+}
+.header-container {
+  background-color: #292B57;
+  display: flex;
+  justify-content: space-between;
+  height: 10%;
+  
 }
 
-p {
-  margin: 0;
+.page-title {
+  color: #292B57;
 }
+
+.page-title h1 {
+  background-color: #A7C5C5;
+}
+
+#nav-items {
+  list-style-type: none;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#nav-items li {
+  margin: 5px;
+}
+
+#nav-items li a {
+  color: aliceblue;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.hero-banner {
+ background-image: url(../images/02-hero-bg.jpg);
+ background-position: center;
+ display: flex;
+ justify-content: flex-end;
+ height: 150px;
+ align-items: end;
+}
+
+.hero-banner div h2 {
+  font-size: 18px;
+  color: #292B57;
+  background-color: #A7C5C5;
+  margin-right: 40px;
+  
+}
+
