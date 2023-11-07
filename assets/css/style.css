@@ -16,6 +16,15 @@ body {
   flex-direction: column;
 
 }
+
+@media only screen and (max-width:768px) {
+ .header-container{
+  flex-direction: column;
+
+ }
+}
+  
+
 .header-container {
   background-color: #292B57;
   display: flex;
@@ -68,7 +77,12 @@ body {
   margin-right: 40px;
   
 }
-
+@media only screen and (max-width:768px) {
+  .hero-banner{
+   justify-content: center;
+ 
+  }
+ }
 /*page wrapper*/
 .page-wrapper {
   margin-right: auto;
@@ -83,6 +97,7 @@ body {
   grid-template-columns: 25% 75%;
   
 }
+
 .work-section{
   color: black;
   height: 500px;
@@ -96,6 +111,12 @@ body {
   "card-4 card-5"
   ;
 }
+@media only screen and (max-width:768px) {
+  .work-section{
+   grid-template-rows: 40% 15% 15% 15% 15%;
+ 
+  }
+ }
 .card-1 {
   grid-area: card-1 ;
   background-image: url(../images/02-portfolio-1.jpg);
@@ -152,13 +173,26 @@ h3 a {
   justify-content: center;
   
 }
+@media only screen and (max-width:768px) {
+  #about{
+   flex-direction: column;
+ 
+  }
+ }
 .about-text {
   
   color: black;
   margin: 50px ;
   padding-inline-start: 50px;
-
 }
+@media only screen and (max-width:768px) {
+  .about-text{
+   width: 100%;
+   margin: 0;
+   padding-left: 0;
+ 
+  }
+ }
 
 
 
@@ -172,6 +206,12 @@ h3 a {
   align-items: baseline;
   
 }
+@media only screen and (max-width:768px) {
+  #contact {
+   flex-direction: column;
+ 
+  }
+ }
 
 .title-card {
   font-size: 30px;
@@ -191,6 +231,15 @@ ul {
   justify-content: space-between;
   
 }
+@media only screen and (max-width:768px) {
+  ul {
+   flex-direction: column;
+   align-items: flex-start;
+   padding: 0%;
+   margin: 0%;
+ 
+  }
+ }
 
 .contact-me ul li,
 .contact-me ul li a {
