@@ -9,15 +9,17 @@ body {
   line-height: 1.5;
 }
 
-
+/* Header and Banner Section*/
 .header-and-banner {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 
 }
 .header-container {
   background-color: #292B57;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   height: 10%;
   
@@ -35,6 +37,7 @@ body {
   list-style-type: none;
   padding-right: 40px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -52,6 +55,7 @@ body {
  background-image: url(../images/02-hero-bg.jpg);
  background-position: center;
  display: flex;
+ flex-wrap: wrap;
  justify-content: flex-end;
  height: 150px;
  align-items: end;
@@ -65,3 +69,132 @@ body {
   
 }
 
+/*page wrapper*/
+.page-wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1000px;
+  color: aliceblue;
+}
+
+/* Work Section*/
+#work {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  
+}
+.work-section{
+  color: black;
+  height: 500px;
+  display: grid;
+  margin: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-areas: 
+  "card-1 card-1"
+  "card-2 card-3"
+  "card-4 card-5"
+  ;
+}
+.card-1 {
+  grid-area: card-1 ;
+  background-image: url(../images/02-portfolio-1.jpg);
+  background-position: center;
+  border-style: solid;
+  border-color: #3151A3;
+  margin: 2px;
+}
+.card-2 {
+  grid-area: card-2 ;
+  background-image: url(../images/02-portfolio-2.jpg);
+  background-position: center;
+  border-style: solid;
+  border-color: #3151A3;
+  margin: 2px;
+}
+.card-3 {
+  grid-area: card-3;
+  background-image: url(../images/02-portfolio-3.jpg);
+  background-position: center;
+  border-style: solid;
+  border-color: #3151A3;
+  margin: 2px;
+}
+.card-4 {
+  grid-area: card-4;
+  background-image: url(../images/02-portfolio-4.jpg);
+  background-position: center;
+  border-style: solid;
+  border-color: #3151A3;
+  margin: 2px;
+}
+.card-5 {
+  grid-area: card-5 ;
+  background-image: url(../images/02-run-buddy.jpg);
+  background-position: center;
+  border-style: solid;
+  border-color: #3151A3;
+  margin: 2px;
+}
+
+h3,
+h3 a {
+  color: #292B57;
+  background-color:#A7C5C5;
+}
+
+
+
+/* About Me Section */
+#about {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  
+}
+.about-text {
+  
+  color: black;
+  margin: 50px ;
+  padding-inline-start: 50px;
+
+}
+
+
+
+
+
+/* Contact Section*/
+
+#contact {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  
+}
+
+.title-card {
+  font-size: 30px;
+  word-wrap: break-word;
+  color: #3151A3;
+  padding-right: 10px black;
+  
+  
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  
+}
+
+.contact-me ul li,
+.contact-me ul li a {
+  padding: 30px;
+  color: black;
+  text-decoration: underline;
+}
